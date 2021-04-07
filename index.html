@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    
+</head>
+<body>
+    <center>
+        <table id="tab" class="mode" width="23%" height="530vh" style="margin: auto; background-color: black; border-radius: 30px; margin-top: 20px;" >
+            <tr>
+                <button id="lightButton" onclick="light()" style="position: relative; width: 100px; height: 20px; background-color: white; top: 50px; left: -2;">Light mode</button>
+                <td colspan="4" height="150vh"><input id="show"  type="text" disabled></td>
+            </tr>
+            <tr>
+                <td width="25%"><button id="opera" onclick="dele()">CLR</button></td>
+                <td width="25%"><button id="opera" onclick="display(',')">,</button></td>
+                <td width="25%"><button id="opera" onclick="display('-')">-</button></td>
+                <td width="25%"><button id="oper" onclick="display('/')">/</button></td>
+            </tr>
+            <tr>
+                <td width="25%"><button onclick="display('7')" style="color:white;">7</button></td>
+                <td width="25%"><button onclick="display('8')" style="color:white;">8</button></td>
+                <td width="25%"><button onclick="display('9')" style="color:white;">9</button></td>
+                <td width="25%"><button id="oper" onclick="display('*')">*</button></td>
+            </tr>
+            <tr>
+                <td width="25%"><button onclick="display('4')" style="color:white;">4</button></td>
+                <td width="25%"><button onclick="display('5')" style="color:white;">5</button></td>
+                <td width="25%"><button onclick="display('6')" style="color:white;">6</button></td>
+                <td width="25%"><button id="op" onclick="display('%')">%</button></td>
+            </tr>
+            <tr>
+                <td width="25%"><button onclick="display('1')" style="color:white;">1</button></td>
+                <td width="25%"><button onclick="display('2')" style="color:white;">2</button></td>
+                <td width="25%"><button onclick="display('3')" style="color:white;">3</button></td>
+                <td width="25%"><button id="oper" onclick="display('+')">+</button></td>
+            </tr>
+            <tr height="60vh">
+                <td colspan="2"><button onclick="display('0')" style="width: 140px; color:white;">0</button></td>
+                <td width="25%"><button onclick="display('.')">.</button></td>
+                <td width="25%"><button id="oper" onclick="solve()">=</button></td>
+            </tr>
+        </table>
+    </center>
+    <script>
+        function display(dig){
+            show.value += dig;
+        }
+        function solve(){
+            var solution = eval(show.value);
+            show.value = solution;
+        }
+        function dele(){
+            show.value = "";
+        }
+        function light(){
+            tab.style.backgroundColor = "white"
+            show.style.backgroundColor = "white"
+            show.style.color = "black";
+            lightButton.style.backgroundColor = "black"
+            lightButton.style.color = "white"
+        }
+    </script>
+</body>
+</html>
