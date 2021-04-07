@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#case{
+    margin: auto;
+}
+#screen{
+    background-color: rgb(179, 200, 204);
+    position: relative;
+    width: 99%;
+    height: 20vh;
+    text-align: center;
+}
+body{
+    background-color: rgb(9, 204, 252);
+}
+#show{
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    width: 99%; 
+    height: 20vh; 
+    top: 20px; 
+    background-color: black; 
+    border: none; 
+    text-align: center; 
+    font-size: 40px; 
+    color: white;
+}
+button{
+    width: 60px; 
+    height: 60px; 
+    font-size: 18px; 
+    border-radius: 50px; 
+    background-color:  rgb(51, 51, 51);
+    margin-left: 15px;
+    margin-top: -50px;
+    border: none;
+}
+#oper{
+    width: 55px; 
+    height: 60px; 
+    font-size: 18px; 
+    border-radius: 50px; 
+    background-color: rgb(254, 145, 40); 
+    margin-left: 15px; 
+    margin-top: -50px;
+}
+#op{
+    width: 55px; 
+    height: 60px; 
+    font-size: 18px; 
+    border-radius: 50px; 
+    background-color: rgb(255, 180, 107); 
+    margin-left: 15px; 
+    margin-top: -50px;
+}
+#opera{
+    width: 60px; 
+    height: 60px; 
+    font-size: 18px; 
+    border-radius: 50px; 
+    background-color:rgb(167, 167, 167); 
+    margin-left: 15px;
+}
+/* #Theme{
+    color: white;
+    background-color: black;
+    position: absolute;
+    margin-left: -150px;
+    border: none;
+    top: 30px;
+}
+.light_mode{
+    background-color: white;
+    color: black;
+} */
